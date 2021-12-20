@@ -1,0 +1,24 @@
+@use'../components/mixins' as *;
+@use'../custom' as *;
+
+.get-started {
+    
+    &__content {
+        color: $white;
+        @include gradient;
+        padding: 3.4rem 0;
+        width: 100%;
+
+        span {
+            padding-right: 8px;
+        }
+    }
+
+    &__form {
+        padding: 3.4rem 0;
+
+        @media (max-width: 300px) {
+            padding: 3.4rem 0 !important;
+        }
+    }
+}
